@@ -449,7 +449,7 @@ body {
   }
 
   .contanerSideHamburguer {
-    width: 55%;
+    width: 50%;
   }
 
   .hamburguer {
@@ -486,7 +486,7 @@ body {
  /* Sessão promoção */
   .contanerLeft {
     display: flex;
-    width: 50vh;
+    width: 50%;
   }
 
  
@@ -506,6 +506,6 @@ body {
   }
 
   .sessaoPromo {
-    height: max-content;
+    height: 110vh;
   }
 }
