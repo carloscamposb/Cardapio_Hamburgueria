@@ -1,0 +1,511 @@
+/* Estilizações gerais */
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
+:root {
+  --color-bg: #f8f5ed;
+  --color-padrao: #ffff;
+  --color-preço: #f0643d;
+  --color-destaque: #df8816;
+  --color-valorAntigo: #959494;
+  --bg-promo: #f3e3bf;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Port Lligat Sans", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-color: var(--color-padrao);
+}
+
+.conteudo {
+  background-color: var(--color-bg);
+  padding: 0rem 1.5rem 20px 1.5rem;
+}
+
+/* Estilização do cabeçalho */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.81rem;
+  width: 100%;
+}
+
+.imgLogo {
+  width: 20%;
+}
+
+.tituloRestaurante {
+  font-size: 1.37rem;
+  width: 80%;
+  margin-top: 1.25rem;
+}
+
+/* Estilização sessão do chefe */
+
+.sessaoChefe {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2.81rem;
+  gap: 1.25rem;
+}
+
+.imgChefe {
+  max-width: 40%;
+}
+
+.chefeBio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.destaqueTexto {
+  color: var(--color-destaque);
+  font-weight: bold;
+  display: flex;
+}
+
+/* Sessão: "Você encontrará (Notas Rápidas" */
+
+.notasRapidas {
+  margin-bottom: 1.81rem;
+}
+
+.tituloTopico {
+  margin-bottom: 10px;
+}
+
+.iconesRapidosContaner {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.grupoIconesRapidos {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.icoIconesRapidos {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.descricaoIcone {
+  white-space: wrap;
+  font-size: 0.75rem;
+}
+
+/* Sessão Promoção */
+
+.sessaoPromo {
+  background-color: var(--bg-promo);
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px 0px 4px 20px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.subtituloPromo {
+  display: flex;
+  color: var(--color-destaque);
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-items: flex-end;
+  margin: 0rem 0rem 1.56rem 3.75rem;
+}
+
+.hamburguerGrupo {
+  display: flex;
+  justify-content: center;
+}
+
+.hamburguer {
+  width: 50%;
+  margin: 0rem 0rem 0.94rem;
+}
+
+.hamburguerPromo {
+  width: 60%;
+  margin: 0rem 0rem 0.94rem;
+}
+
+.areaCurtida {
+  text-align: center;
+}
+
+.curtida {
+  width: 70%;
+}
+
+.numeroCurtida {
+  font-size: 0.75rem;
+}
+
+/* Sessão promoção (Texto descrição hamburguer promo) */
+
+.nomeHamburguer {
+  margin: 0.75rem;
+}
+
+.grupoDescricao {
+  padding-left: 0.625rem;
+}
+
+.valores {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 90%;
+  margin-bottom: 2.81rem;
+  font-size: 0.87rem;
+}
+
+.valorSemPromo {
+  color: var(--color-valorAntigo);
+  text-decoration: line-through 0.06rem;
+  padding: 0rem 0.87rem;
+}
+
+.valorAtual {
+  background-color: var(--color-preço);
+  padding: 0.37rem 0.87rem;
+  color: var(--color-padrao);
+  border-radius: 5px;
+}
+
+/* Cardápio Quente Burguer */
+
+.valorEspaco {
+  margin-top: 20px;
+}
+
+/* =====RESPONSIVIDADE ========= */
+
+@media (min-width: 700px) {
+  /* Estilizações gerais */
+  body {
+    margin: 30px 50px;
+  }
+
+  .conteudo {
+    border-radius: 10px;
+    border: 2px solid #393838;
+  }
+
+  /* Estilização do cabeçalho */
+  .imgLogo {
+    width: 10%;
+  }
+
+  /* área dos hamburgueres */
+  .areasPrincipais {
+    display: flex;
+    gap: 48px;
+  }
+
+  .contaner {
+    width: 50%;
+    height: 60vh;
+  }
+
+  /* Estilização sessão do chefe */
+  .areaInicial {
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+  }
+
+ 
+  .sessaoChefe {
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+
+.chefeBio{
+    display: flex;
+    align-items: center;
+}
+
+.textoChefe{
+    padding-left: 20px;
+}
+  /* Sessão: "Você encontrará (Notas Rápidas" */
+ 
+
+  .notasRapidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .grupoIconesRapidos{
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 50px;
+      align-items: center;
+    
+  }
+
+  .topicosRapidos {
+    text-align: start;
+  }
+  
+  .imgIconeRapido{
+    width: 20%;
+  }
+   
+
+  /* Sessão promoção */
+  .sessaoPromo {
+    padding: 20px 0px 10px 20px;
+    width: 80%;
+  }
+
+  .contanerSideHamburguer {
+    height: 120vh;
+  }
+
+  .topicoDescricao {
+    font-size: 1rem;
+  }
+
+  /* Cardápio Quente Burguer */
+  .tituloTopico {
+    padding-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .tituloTopicoHamburguer {
+    font-size: 1.5rem;
+  }
+
+  .limited {
+    height: 60%;
+    position: static;
+    top: 60%;
+    right: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: scroll;
+    z-index: 999; /* Adicionando um valor de z-index para garantir que esteja acima de outros elementos */
+  }
+}
+
+@media (min-width: 1020px) {
+  /* Estilização do cabeçalho */
+  .tituloRestaurante {
+    font-size: 1.95rem;
+    width: 50%;
+  }
+
+  /* Estilização sessão do chefe */
+  .tituloTopicoChef {
+    font-size: 1rem;
+  }
+
+  .sessaoChefe {
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+  }
+
+  /* Sessão: "Você encontrará (Notas Rápidas" */
+  .imgIconeRapido {
+    width: 25%;
+  }
+
+  .descricaoIcone {
+    font-size: 0.85rem;
+  }
+
+  /* Cardápio Quente Burguer */
+  .nomeHamburguer {
+    font-size: 1.25rem;
+  }
+
+  .topicoDescricao {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1150px) {
+ 
+   /* Sessão: "Você encontrará (Notas Rápidas" */
+    .imgIconeRapido {
+    width: 30%;
+  }
+
+  .descricaoIcone {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+
+  .sessaoChefe {
+    width: 80%;
+    padding-left: 5px;
+  }
+}
+
+
+@media (min-width: 1340px) {
+  
+    /* Estilização sessão do chefe */
+    .sessaoChefe {
+    width: 65%;
+    padding-left: 5px;
+  }
+}
+
+
+
+@media (min-width: 2560px) {
+ 
+    /* Estilizações gerais */
+  
+  .conteudo {
+    background-color: var(--color-bg);
+    padding: 2rem 5rem 5rem;
+  }
+
+  /* Estilização do cabeçalho */
+
+  .imgLogo {
+    width: 10%;
+  }
+
+  .tituloRestaurante {
+    font-size: 4rem;
+    margin-top: 5rem;
+  }
+
+  /* Estilização sessão do chefe */
+  .areaInicial {
+    margin-bottom: 30px;
+  }
+
+  .imgChefe {
+    width: 20%;
+  }
+
+  .tituloTopicoChef {
+    font-size: 2.5rem;
+  }
+
+  .textoChefe {
+    font-size: 2rem;
+  }
+
+  .sessaoChefe {
+    width: 55%;
+  }
+   /* Sessão: "Você encontrará (Notas Rápidas" */
+  .notasRapidas {
+    margin-top: 30px;
+  }
+
+  .imgIconeRapido {
+    width: 70px;
+  }
+ 
+  /* área dos hamburgueres */
+
+  .areasPrincipais {
+    justify-content: space-between;
+    height: 60%;
+  }
+
+
+  /* Cardápio Quente Burguer */
+
+  .tituloTopicoHamburguer,
+  .tituloTopico {
+    font-size: 3rem;
+  }
+
+  .descricaoIcone {
+    font-size: 1.7rem;
+  }
+
+  .contanerSideHamburguer {
+    width: 55%;
+  }
+
+  .hamburguer {
+    width: 40%;
+  }
+
+  .areaCurtida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .curtida {
+    width: 130%;
+  }
+
+  .numeroCurtida {
+    font-size: 1.7rem;
+  }
+
+  .grupoDescricao {
+    padding-left: 40px;
+  }
+
+  .topicoDescricao {
+    font-size: 2rem;
+  }
+
+  .valores {
+    font-size: 2rem;
+  }
+
+ /* Sessão promoção */
+  .contanerLeft {
+    display: flex;
+    width: 50vh;
+  }
+
+ 
+  .subtituloPromo {
+    font-size: 2rem;
+    padding-left: 180px;
+    margin-bottom: 50px;
+  }
+
+  .nomeHamburguer {
+    font-size: 2.25rem;
+  }
+
+
+  .hamburguerPromo {
+    width: 80%;
+  }
+
+  .sessaoPromo {
+    height: max-content;
+  }
+}
